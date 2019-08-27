@@ -6,6 +6,7 @@ public class Empleado {
     protected String apellido;
     protected String email;
     protected int sueldoBase;
+    protected int tipo;
 
     public Empleado(int dni, String nombre, String apellido, String email, int sueldoBase){
         this.dni = dni;
@@ -14,6 +15,5 @@ public class Empleado {
         this.email = email;
         this.sueldoBase = sueldoBase;
     }
-
 
 }
