@@ -24,4 +24,18 @@ public class Vendedor extends Empleado {
         return totalVentas;
     }
 
+    @Override
+    public String toString() {
+        return "Administrativo{" +
+                "dni=" + getDni() +
+                ", nombre='" + getNombre() + '\'' +
+                ", apellido='" + getApellido() + '\'' +
+                ", email='" + getApellido() + '\'' +
+                ", sueldoBase=" + getSueldoBase() +
+                ", legajo='" + getLegajo() + '\'' +
+                ", comision='" + porcentComision + '\'' +
+                ", ventas='" + totalVentas + '\'' +
+                '}';
+    }
+
 }

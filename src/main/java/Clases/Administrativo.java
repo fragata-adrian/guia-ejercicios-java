@@ -22,4 +22,20 @@ public class Administrativo extends Empleado {
     public float getSueldo(){
         return  getSueldoBase() * ((hsExtra * 1.5f) + hsMes) / hsMes;
     }
+
+    @Override
+    public String toString() {
+        return "Administrativo{" +
+                "dni=" + getDni() +
+                ", nombre='" + getNombre() + '\'' +
+                ", apellido='" + getApellido() + '\'' +
+                ", email='" + getApellido() + '\'' +
+                ", sueldoBase=" + getSueldoBase() +
+                ", legajo='" + getLegajo() + '\'' +
+                ", hsExtra='" + hsExtra + '\'' +
+                ", hsMes='" + hsMes + '\'' +
+                '}';
+    }
+
+
 }
