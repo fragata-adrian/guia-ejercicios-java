@@ -30,6 +30,10 @@ public class Alumno {
         return asignaturas;
     }
 
+    public int totalDeHoras() {
+        return asignaturas.stream().mapToInt(a -> a.getHorasSemanales()).sum();
+    }
+
     public void agregarAsignatura(Asignatura nombreAsignatura) {
         asignaturas.add(nombreAsignatura);
     }
